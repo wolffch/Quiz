@@ -21,31 +21,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="???" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vnm-un-mqt">
-                                <rect key="frame" x="175" y="42" width="25" height="38"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="???" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vnm-un-mqt">
+                                <rect key="frame" x="175" y="42" width="25" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="???" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xpj-Uz-66c">
-                                <rect key="frame" x="175" y="323" width="25" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="???" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xpj-Uz-66c">
+                                <rect key="frame" x="175" y="278.5" width="25" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wxe-gn-GDs">
-                                <rect key="frame" x="138" y="340" width="97" height="59"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wxe-gn-GDs">
+                                <rect key="frame" x="139" y="295.5" width="97" height="30"/>
                                 <state key="normal" title="Show Answer "/>
                                 <connections>
                                     <action selector="showAnswer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Bdz-sH-Qsc"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c0r-ML-jSi">
-                                <rect key="frame" x="138" y="88" width="98" height="57"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c0r-ML-jSi">
+                                <rect key="frame" x="138" y="70.5" width="98" height="30"/>
                                 <state key="normal" title="Next Question"/>
                                 <connections>
                                     <action selector="showNextQuestion:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YqA-hD-m6f"/>
@@ -53,6 +49,19 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Xpj-Uz-66c" firstAttribute="centerX" secondItem="c0r-ML-jSi" secondAttribute="centerX" id="1hv-Uq-m05"/>
+                            <constraint firstItem="Wxe-gn-GDs" firstAttribute="centerX" secondItem="c0r-ML-jSi" secondAttribute="centerX" id="34h-qe-IO4"/>
+                            <constraint firstItem="vnm-un-mqt" firstAttribute="top" secondItem="RQ0-Xr-Tnx" secondAttribute="bottom" constant="22" id="3Nb-Hj-qCo"/>
+                            <constraint firstItem="Wxe-gn-GDs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7yy-e0-7x0"/>
+                            <constraint firstItem="Wxe-gn-GDs" firstAttribute="top" secondItem="c0r-ML-jSi" secondAttribute="bottom" constant="195" id="baN-7O-S2T"/>
+                            <constraint firstItem="c0r-ML-jSi" firstAttribute="top" secondItem="vnm-un-mqt" secondAttribute="bottom" constant="8" id="e77-Em-QUM"/>
+                            <constraint firstItem="vnm-un-mqt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fdh-Oc-eIr"/>
+                            <constraint firstItem="Xpj-Uz-66c" firstAttribute="top" secondItem="c0r-ML-jSi" secondAttribute="bottom" constant="178" id="gNu-8g-h6B"/>
+                            <constraint firstItem="vnm-un-mqt" firstAttribute="centerX" secondItem="c0r-ML-jSi" secondAttribute="centerX" id="gcw-SP-jl8"/>
+                            <constraint firstItem="Xpj-Uz-66c" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sbB-wv-MPY"/>
+                            <constraint firstItem="c0r-ML-jSi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yFp-Mk-C7R"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="answerLabel" destination="Xpj-Uz-66c" id="u2M-j5-2uz"/>
