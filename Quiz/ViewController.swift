@@ -4,7 +4,7 @@
 //
 //  Created by Christina Wolff on 1/23/19.
 //  Copyright © 2019 Christina Wolff. All rights reserved.
-//
+// High Point University
 
 import UIKit
 
@@ -21,13 +21,25 @@ class ViewController: UIViewController {
     let questions: [String] = [
         "What is 7+7",
         "What is the capital of Vermont?",
-        "What is cognac made from?"
+        "What is cognac made from?",
+        "What is my favorite color?",
+        "Who has won the most world series?",
+        "What is a flock of crows known as?",
+        "What is a baby spider known as?",
+        "How many noses do slugs have?"
+        
     ]
     
     let answers: [String] = [
         "14",
         "Montpelier",
-        "Grapes"
+        "Grapes",
+        "Maroon.",
+        "The New York Yankees",
+        "Murder",
+        "Spiderling",
+        "4"
+        
     ]
     var currentQuestionIndex: Int = 0
     
