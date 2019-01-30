@@ -55,8 +55,8 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <connections>
-                        <outlet property="answerLabel" destination="Xpj-Uz-66c" id="4yQ-Na-6FO"/>
-                        <outlet property="questionLabel" destination="vnm-un-mqt" id="kPr-oJ-2zi"/>
+                        <outlet property="answerLabel" destination="Xpj-Uz-66c" id="5dq-Se-jrv"/>
+                        <outlet property="questionLabel" destination="vnm-un-mqt" id="tMh-bk-bsz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

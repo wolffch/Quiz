@@ -11,16 +11,17 @@ import UIKit
 class ViewController: UIViewController {
     @IBOutlet var questionLabel: UILabel!
     @IBOutlet var answerLabel: UILabel!
-    
+ 
     let questions: [String] = [
-    "What is 7+ 7",
-    "What is the capital of Vermont?",
-    "What is cognac made from?"
+        "What is 7+7",
+        "What is the capital of Vermont?",
+        "What is cognac made from?"
     ]
+    
     let answers: [String] = [
-    "14",
-    "Montpelier",
-    "Grapes"
+        "14",
+        "Montpelier",
+        "Grapes"
     ]
     var currentQuestionIndex: Int = 0
     
@@ -29,12 +30,11 @@ class ViewController: UIViewController {
         if currentQuestionIndex == questions.count {
             currentQuestionIndex = 0
         }
-        
         let question: String = questions[currentQuestionIndex]
         questionLabel.text = question
         answerLabel.text = "???"
-        
     }
+    
     @IBAction func showAnswer(_ sender: UIButton) {
         let answer: String = answers[currentQuestionIndex]
         answerLabel.text = answer
@@ -43,5 +43,6 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         questionLabel.text = questions[currentQuestionIndex]
     }
+
 }
 
